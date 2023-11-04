@@ -8,14 +8,23 @@ rm -rf ~/Videos ~/Templates ~/Music ~/Public
 	# usermod -aG sudo <username>
  	# restart
 
-# 
+# install main apps
 sudo apt update
 sudo apt upgrade
 
-sudo apt install tmux neovim htop wget curl timeshift gdebi neofetch nala git flatpak build-essential dkms linux-headers-$(uname -r) libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi gnome-shell-extension-manager
+sudo apt install -y tmux neovim htop wget curl timeshift gdebi neofetch nala git flatpak 
+
+# install build essentials
+sudo nala build-essential dkms linux-headers-$(uname -r) 
+
+# install restricted extras - non open source codecs and microsoft fonts
+sudo nala install ttf-mscorefonts-installer libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
+
+# install gnome manager
+sudo nala install gnome-shell-extension-manager
 
 # install/enable firewall
-sudo apt install ufw -y
+sudo nala install ufw -y
 sudo ufw enable
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
