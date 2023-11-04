@@ -15,7 +15,7 @@ sudo apt upgrade
 sudo apt install tmux nvim htop wget curl timeshift gdebi neofetch nala git flatpak build-essential dkms linux-headers-$(uname -r) libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi gnome-shell-extension-manager
 
 # install/enable firewall
-sudo nala install ufw -y
+sudo apt install ufw -y
 sudo ufw enable
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
@@ -24,7 +24,8 @@ sudo ufw allow ssh
 
 # discord install
 wget "https://discord.com/api/download?platform=linux&format=deb" -O discord.deb
-sudo nala install discord.deb
+chmod +x discord.deb
+sudo install discord.deb
 
 # install taskbar notification ?site
 # fingerprint authentication https://wiki.debian.org/SecurityManagement/fingerprint%20authentication
