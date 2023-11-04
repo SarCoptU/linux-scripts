@@ -21,8 +21,6 @@ sudo nala install build-essential dkms linux-headers-$(uname -r)
 sudo apt-add-repository contrib non-free -y
 sudo nala install software-properties-common ttf-mscorefonts-installer -y
 
-
-
 # restricted extras - non open source codecs 
 sudo nala install libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
 
@@ -48,3 +46,7 @@ sudo gdebi discord.deb
 	# wget 'https://github.com/obsidianmd/obsidian-releases/releases/download/v*.deb'
  	# chmod +x obsidian*.deb
 	# sudo gdebi obsidian*.deb
+
+# install VMware, ?docker
+
+# customization
