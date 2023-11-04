@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# remove ~/Videos Templates Music
+# remove some default folders I don't use
 rm -rf ~/Videos ~/Templates ~/Music ~/Public
 
 # add user to sudo group
