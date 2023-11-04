@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # remove ~/Videos Templates Music
-rm -rf ~/Videos ~/Templates ~/Music
+rm -rf ~/Videos ~/Templates ~/Music ~/Public
 
 # add user to sudo group
 	# su -
@@ -22,7 +22,7 @@ sudo ufw default allow outgoing
 sudo ufw allow ssh
 # Using above commands, we have blocked all the incoming traffic except ssh and allowed all outgoing traffic.
 
-# discord install
+# discord install issues
 wget "https://discord.com/api/download?platform=linux&format=deb" -O discord.deb
 chmod +x discord.deb
 sudo install discord.deb
