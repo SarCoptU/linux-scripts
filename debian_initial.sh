@@ -24,13 +24,12 @@ sudo ufw allow ssh
 
 # discord install issues
 wget "https://discord.com/api/download?platform=linux&format=deb" -O discord.deb
-chmod +x discord.deb
-sudo install discord.deb
+sudo gdebi discord.deb
+# install taskbar notification ?source
 
-# install taskbar notification ?site
 # fingerprint authentication https://wiki.debian.org/SecurityManagement/fingerprint%20authentication
 
-# install obsidian
-wget 'https://github.com/obsidianmd/obsidian-releases/releases/download/v*.deb'
-chmod +x obsidian*.deb
-gdebi obsidian*.deb
+# install obsidian - needs some work similar to discord
+	# wget 'https://github.com/obsidianmd/obsidian-releases/releases/download/v*.deb'
+ 	# chmod +x obsidian*.deb
+	# sudo gdebi obsidian*.deb
