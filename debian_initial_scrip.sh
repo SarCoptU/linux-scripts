@@ -14,7 +14,7 @@ sudo apt upgrade
 sudo apt install tmux nvim htop wget curl timeshift gdebi neofetch nala git flatpak build-essential dkms linux-headers-$(uname -r) libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi gnome-shell-extension-manager
 
 # install/enable firewall
-sudo apt install ufw -y
+sudo nala install ufw -y
 sudo ufw enable
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
