@@ -4,8 +4,9 @@
 rm -rf ~/Videos ~/Templates ~/Music
 
 # add user to sudo group
-	# sudo - root
+	# su -
 	# usermod -aG sudo <username>
+ 	# restart
 
 # 
 sudo apt update
