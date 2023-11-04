@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# remove ~/Videos Templates Music Video
+# remove ~/Videos Templates Music
+rm -rf ~/Videos ~/Templates ~/Music
 
 # add user to sudo group
 	# sudo - root
@@ -10,14 +11,14 @@
 sudo apt update
 sudo apt upgrade
 
-sudo apt install tmux vim htop timeshift gdebi neofetch nala git flatpak build-essential dkms linux-headers-$(uname -r) libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi 
+sudo apt install tmux vim htop timeshift gdebi neofetch nala git flatpak build-essential dkms linux-headers-$(uname -r) libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi gnome-shell-extension-manager
 
-# enable firewall
-	# sudo apt install ufw -y
-	# sudo ufw enable
-	# sudo ufw default deny incoming
-	# sudo ufw default allow outgoing
-	# sudo ufw allow ssh
+# install/enable firewall
+sudo apt install ufw -y
+sudo ufw enable
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow ssh
 # Using above commands, we have blocked all the incoming traffic except ssh and allowed all outgoing traffic.
 
 # discord install
