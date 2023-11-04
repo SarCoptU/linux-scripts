@@ -16,5 +16,3 @@ sudo apt install gobuster openvpn nmap whatweb gdb gnupg2
 # pwndbg - install by github https://github.com/pwndbg/pwndbg
 
 # ghidra = run from ghidra run file once JDK latest is installed https://github.com/NationalSecurityAgency/ghidra
-
-# tinker the cli https://linuxopsys.com/topics/make-ubuntu-terminal-look-like-kali-linux
