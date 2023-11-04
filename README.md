@@ -1,2 +1,2 @@
-# linux-scipts
+# linux-scripts
 Various scripts for different Linux distros
