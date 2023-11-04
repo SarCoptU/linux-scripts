@@ -1,11 +1,11 @@
 #!/bin/bash
-sudo nala update && sudo nala upgrade -y
-sudo nala install gobuster openvpn nmap whatweb gdb 
+sudo apt update && sudo apt upgrade -y
+sudo apt install gobuster openvpn nmap whatweb gdb gnupg2
 
-# install metasploit
-sudo apt update
-sudo apt install curl wget gnupg2
-#
+# install metasploit 
+
+# learn a bit about gnupg https://www.redhat.com/sysadmin/getting-started-gpg
+
 # # seclists : https://github.com/danielmiessler/SecLists
 # need to add a firewall rule to allow all traffic to tun0 in and out
 # # issues for wordlists as they exist in kali - can't find reputable github page
