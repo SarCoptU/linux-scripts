@@ -14,8 +14,8 @@ sudo apt upgrade
 
 sudo apt install -y tmux neovim htop wget curl timeshift gdebi neofetch nala git flatpak 
 
-# install build essentials
-sudo nala build-essential dkms linux-headers-$(uname -r) 
+# install build essential
+sudo nala install build-essential dkms linux-headers-$(uname -r) 
 
 # microsoft fonts
 sudo apt-add-repository contrib non-free -y
