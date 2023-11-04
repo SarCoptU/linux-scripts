@@ -17,8 +17,14 @@ sudo apt install -y tmux neovim htop wget curl timeshift gdebi neofetch nala git
 # install build essentials
 sudo nala build-essential dkms linux-headers-$(uname -r) 
 
-# install restricted extras - non open source codecs and microsoft fonts
-sudo nala install ttf-mscorefonts-installer libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
+# microsoft fonts
+sudo apt-add-repository contrib non-free -y
+sudo nala install software-properties-common ttf-mscorefonts-installer -y
+
+
+
+# restricted extras - non open source codecs 
+sudo nala install libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
 
 # install gnome manager
 sudo nala install gnome-shell-extension-manager
