@@ -49,4 +49,4 @@ sudo gdebi discord.deb
 
 # install VMware, ?docker
 
-# customization
+# customization, add window buttons
