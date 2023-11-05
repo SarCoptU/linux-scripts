@@ -11,7 +11,6 @@ sudo apt install gobuster openvpn nmap whatweb gdb gnupg2
 # # issues for wordlists as they exist in kali - can't find reputable github page
 
 # searchsploit https://www.exploit-db.com/searchsploit
-# the msfconsole works from here: https://www.fosslinux.com/19213/how-to-install-metasploit-on-ubuntu.htm
 
 # pwndbg - install by github https://github.com/pwndbg/pwndbg
 
