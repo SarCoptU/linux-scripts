@@ -50,5 +50,3 @@ sudo gdebi discord.deb
 # install VMware, ?docker
 
 # customization
-
-# tinker the cli https://linuxopsys.com/topics/make-ubuntu-terminal-look-like-kali-linux
