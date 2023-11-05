@@ -12,7 +12,7 @@ rm -rf ~/Videos ~/Templates ~/Music ~/Public
 sudo apt update
 sudo apt upgrade
 
-sudo apt install -y tmux vim htop wget curl timeshift gdebi neofetch nala git flatpak haruna
+sudo apt install -y tmux neovim htop wget curl timeshift gdebi neofetch nala git flatpak haruna
 
 # install build essential
 sudo nala install build-essential dkms linux-headers-$(uname -r) 
