@@ -27,6 +27,11 @@ sudo nala install libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly 
 # install gnome manager
 sudo nala install gnome-shell-extension-manager
 
+# neovim add line numbers and check syntax
+mkdir ~/.config/nvim
+echo "set number" >> ~/.config/nvim/init.vim
+echo "syntax on" >> ~/.config/nvim/init.vim
+
 # install/enable firewall
 sudo nala install ufw -y
 sudo ufw enable
