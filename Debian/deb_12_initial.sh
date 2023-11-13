@@ -1,44 +1,44 @@
 #!/bin/bash
 
-# remove some default folders I don't use
+# Remove some default home folders
 rm -rf ~/Videos ~/Templates ~/Music ~/Public
 
 # add user to sudo group
-	# su -
-	# usermod -aG sudo <username>
- 	# restart
+    # su -
+    # usermod -aG sudo <username>
+    # restart
 
-# install main apps
+# Update repositories and install main apps
 sudo apt update
 sudo apt upgrade
 
-sudo apt install -y tmux neovim htop wget curl timeshift gdebi neofetch nala git flatpak haruna
+sudo apt install tmux neovim htop wget curl timeshift gdebi neofetch nala git flatpak haruna -y
 
-# install build essential
-sudo nala install build-essential dkms linux-headers-$(uname -r) 
+# Install build essential
+sudo nala install build-essential dkms linux-headers-$(uname -r) -y
 
-# microsoft fonts
+# Add microsoft fonts
 sudo apt-add-repository contrib non-free -y
 sudo nala install software-properties-common ttf-mscorefonts-installer -y
 
-# restricted extras - non open source codecs 
-sudo nala install libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
+# Install restricted extras - non open source codecs 
+sudo nala install libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi -y
 
-# install gnome manager
-sudo nala install gnome-shell-extension-manager
+# Gnome manager for tweaking the desktop environment
+sudo nala install gnome-shell-extension-manager -y
 
-# neovim add line numbers and check syntax
+# Neovim configuration: add line numbers and check syntax
 mkdir ~/.config/nvim
 echo "set number" >> ~/.config/nvim/init.vim
 echo "syntax on" >> ~/.config/nvim/init.vim
 
-# install/enable firewall
+# Install and configure firewall
 sudo nala install ufw -y
 sudo ufw enable
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw allow ssh
-# Using above commands, we have blocked all the incoming traffic except ssh and allowed all outgoing traffic.
+# Using the above commands, all the incoming traffic except ssh is blocked. All outgoing traffic allowed.
 
 # discord install issues
 wget "https://discord.com/api/download?platform=linux&format=deb" -O discord.deb
@@ -49,7 +49,7 @@ sudo gdebi discord.deb
 
 # install obsidian - needs some work similar to discord
 	# wget 'https://github.com/obsidianmd/obsidian-releases/releases/download/v*.deb'
- 	# chmod +x obsidian*.deb
+ # chmod +x obsidian*.deb
 	# sudo gdebi obsidian*.deb
 
 # install VMware, ?docker
