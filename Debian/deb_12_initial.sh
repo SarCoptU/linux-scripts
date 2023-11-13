@@ -55,3 +55,7 @@ sudo gdebi discord.deb
 # install VMware, ?docker
 
 # customization
+
+# terminal tinkering - zsh and oh my zsh
+    # https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
+    # https://github.com/ohmyzsh/ohmyzsh/wiki
