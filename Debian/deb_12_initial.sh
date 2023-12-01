@@ -3,11 +3,6 @@
 # Remove some default home folders
 rm -rf ~/Videos ~/Templates ~/Music ~/Public
 
-# add user to sudo group
-    # su -
-    # usermod -aG sudo <username>
-    # restart
-
 # Update repositories and install main apps
 sudo apt update
 sudo apt upgrade
@@ -40,7 +35,7 @@ sudo ufw default allow outgoing
 sudo ufw allow ssh
 # Using the above commands, all the incoming traffic except ssh is blocked. All outgoing traffic allowed.
 
-# discord install issues
+# discord install
 wget "https://discord.com/api/download?platform=linux&format=deb" -O discord.deb
 sudo gdebi discord.deb
 # install taskbar notification ?source
