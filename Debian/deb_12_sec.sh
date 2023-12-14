@@ -2,7 +2,8 @@
 sudo apt update && sudo apt upgrade -y
 sudo apt install gobuster openvpn nmap whatweb gdb gnupg2
 
-# install metasploit 
+# install metasploit - one way is to enable kali repos, install needed apps and disable
+  # never apt upgrade while kali repos active
 
 # learn a bit about gnupg https://www.redhat.com/sysadmin/getting-started-gpg
 
