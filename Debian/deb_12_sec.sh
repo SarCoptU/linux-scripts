@@ -8,7 +8,6 @@ sudo nala install -y gobuster openvpn nmap whatweb gdb gnupg2 metasploit-framewo
 
 # install gdb and pwngdb plugin
 sudo nala install -y gdb
-
 git clone https://github.com/pwndbg/pwndbg
 cd pwndbg
 ./setup.sh
