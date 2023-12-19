@@ -44,6 +44,18 @@ sudo gdebi discord.deb
 sudo nala install fprintd libpam-fprintd
 # then follow the instruction at Settings/User/Fingerprint Login
 
+# install oh my zsh
+# fist install zsh
+sudo nala install -y zsh
+# change default shell to zsh then restart
+chsh -s $(which zsh)
+# download and install oh my zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# for themes that require powerline fonts
+sudo nala install -y fonts-powerline
+# restart terminal and apply changes
+source ~/.zshrc
+
 # install obsidian - instruction on https://obsidian.md/download
 
 # install VMware from https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html
