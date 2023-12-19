@@ -41,16 +41,11 @@ sudo gdebi discord.deb
 # install taskbar notification ?source
 
 # fingerprint authentication https://wiki.debian.org/SecurityManagement/fingerprint%20authentication
+sudo nala install fprintd libpam-fprintd
+# then follow the instruction at Settings/User/Fingerprint Login
 
-# install obsidian - needs some work similar to discord
-	# wget 'https://github.com/obsidianmd/obsidian-releases/releases/download/v*.deb'
- # chmod +x obsidian*.deb
-	# sudo gdebi obsidian*.deb
+# install obsidian - instruction on https://obsidian.md/download
 
-# install VMware, ?docker
+# install VMware from https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html
 
-# customization
 
-# terminal tinkering - zsh and oh my zsh
-    # https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
-    # https://github.com/ohmyzsh/ohmyzsh/wiki
