@@ -4,7 +4,7 @@
 sudo nala update && sudo apt upgrade -y
 
 # install basic security tools
-sudo nala install -y gobuster openvpn nmap whatweb gdb gnupg2 metasploit-framework exploitdb 
+sudo nala install -y gobuster openvpn nmap whatweb gdb gnupg2 metasploit-framework exploitdb hydra
 
 # install gdb and pwngdb plugin
 sudo nala install -y gdb
