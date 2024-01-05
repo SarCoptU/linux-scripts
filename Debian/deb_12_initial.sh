@@ -71,4 +71,4 @@ sudo apt install code # or code-insiders
 
 # install VMware from https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html
 
-
+# alternatively install virtualbox
