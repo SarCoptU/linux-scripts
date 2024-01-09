@@ -10,17 +10,17 @@ sudo apt upgrade
 sudo apt install tmux neovim htop wget curl timeshift gdebi neofetch nala git flatpak haruna net-tools -y
 
 # Install build essential
-sudo nala install build-essential dkms linux-headers-$(uname -r) -y
+sudo apt install build-essential dkms linux-headers-$(uname -r) -y
 
 # Add microsoft fonts
 sudo apt-add-repository contrib non-free -y
-sudo nala install software-properties-common ttf-mscorefonts-installer -y
+sudo apt install software-properties-common ttf-mscorefonts-installer -y
 
 # Install restricted extras - non open source codecs 
-sudo nala install libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi -y
+sudo apt install libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi -y
 
 # Gnome manager for tweaking the desktop environment
-sudo nala install gnome-shell-extension-manager -y
+sudo apt install gnome-shell-extension-manager -y
 
 # Neovim configuration: add line numbers and check syntax
 mkdir ~/.config/nvim
@@ -28,7 +28,7 @@ echo "set number" >> ~/.config/nvim/init.vim
 echo "syntax on" >> ~/.config/nvim/init.vim
 
 # Install and configure firewall
-sudo nala install ufw -y
+sudo apt install ufw -y
 sudo ufw enable
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
@@ -41,18 +41,18 @@ sudo gdebi discord.deb
 # install taskbar notification ?source
 
 # fingerprint authentication https://wiki.debian.org/SecurityManagement/fingerprint%20authentication
-sudo nala install fprintd libpam-fprintd
+sudo apt install fprintd libpam-fprintd
 # then follow the instruction at Settings/User/Fingerprint Login
 
 # install oh my zsh
 # fist install zsh
-sudo nala install -y zsh
+sudo apt install -y zsh
 # change default shell to zsh then restart
 chsh -s $(which zsh)
 # download and install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # for themes that require powerline fonts
-sudo nala install -y fonts-powerline
+sudo  install -y fonts-powerline
 # restart terminal and apply changes
 source ~/.zshrc
 
