@@ -4,7 +4,7 @@
 sudo apt update && sudo apt upgrade -y
 
 # install basic security tools
-sudo apt install -y gobuster openvpn nmap whatweb gdb gnupg2 metasploit-framework exploitdb hydra
+sudo apt install -y gobuster openvpn nmap whatweb gdb gnupg2 exploitdb
 
 # install gdb and pwngdb plugin
 sudo apt install -y gdb
