@@ -56,6 +56,13 @@ sudo apt install -y fonts-powerline
 # restart terminal and apply changes
 source ~/.zshrc
 
+# install kali-like theme and 
+wget -O ~/.oh-my-zsh/themes/kali-like.zsh-theme https://raw.githubusercontent.com/clamy54/kali-like-zsh-theme/master/kali-like.zsh-theme
+# nvim ~/.zshrc
+# Set ZSH_THEME="current_theme" to ZSH_THEME="kali-like" 
+# restart terminal and apply changes
+source ~/.zshrc
+
 # VS code install from https://code.visualstudio.com/docs/setup/linux
 sudo apt install wget gpg
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
@@ -66,9 +73,3 @@ rm -f packages.microsoft.gpg
 sudo apt install apt-transport-https
 sudo apt update
 sudo apt install code # or code-insiders
-
-# install obsidian - instruction on https://obsidian.md/download
-
-# install VMware from https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html
-
-# alternatively install virtualbox
