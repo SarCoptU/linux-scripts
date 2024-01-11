@@ -7,7 +7,7 @@ rm -rf ~/Videos ~/Templates ~/Music ~/Public
 sudo apt update
 sudo apt upgrade
 
-sudo apt install tmux neovim htop wget curl timeshift gdebi neofetch nala git flatpak haruna virtualbox net-tools -y
+sudo apt install tmux neovim htop wget curl timeshift gdebi neofetch nala git flatpak haruna net-tools -y
 
 # Add microsoft fonts
 sudo apt-add-repository contrib non-free -y
