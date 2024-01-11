@@ -10,13 +10,12 @@ sudo apt upgrade
 sudo apt install tmux neovim htop wget curl timeshift gdebi neofetch nala git flatpak haruna net-tools -y
 
 # Add microsoft fonts
-sudo apt-add-repository contrib non-free -y
 sudo apt install software-properties-common ttf-mscorefonts-installer -y
 
 # Neovim configuration: add line numbers and check syntax
-# mkdir ~/.config/nvim
-# echo "set number" >> ~/.config/nvim/init.vim
-# echo "syntax on" >> ~/.config/nvim/init.vim
+mkdir ~/.config/nvim
+echo "set number" >> ~/.config/nvim/init.vim
+echo "syntax on" >> ~/.config/nvim/init.vim
 
 # discord install
 wget "https://discord.com/api/download?platform=linux&format=deb" -O discord.deb
