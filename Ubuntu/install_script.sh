@@ -44,3 +44,7 @@ rm -f packages.microsoft.gpg
 sudo apt install apt-transport-https
 sudo apt update
 sudo apt install code # or code-insiders
+
+# Install ZAP and Burpsuite - https://portswigger.net/burp/communitydownload
+sudo snap install zaproxy --classic
+
