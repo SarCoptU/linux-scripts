@@ -20,7 +20,7 @@ sudo apt install software-properties-common ttf-mscorefonts-installer -y
 sudo apt install libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi -y
 
 # Gnome manager for tweaking the desktop environment
-sudo apt install gnome-shell-extension-manager -y
+# sudo apt install gnome-shell-extension-manager -y
 
 # Neovim configuration: add line numbers and check syntax
 mkdir ~/.config/nvim
