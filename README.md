@@ -1,2 +1,2 @@
-# linux_scripts
-Various scripts for Linux
+# debian_scripts
+Scripts for Debian Linux
