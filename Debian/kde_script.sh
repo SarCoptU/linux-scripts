@@ -19,7 +19,7 @@ sudo apt install software-properties-common ttf-mscorefonts-installer -y
 # Install restricted extras - non open source codecs 
 sudo apt install libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi -y
 
-# Add latpak backup repo
+# Add flatpak backup repo
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # Neovim configuration: add line numbers and check syntax
