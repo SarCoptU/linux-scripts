@@ -71,6 +71,8 @@ wget -O ~/.oh-my-zsh/themes/kali-like.zsh-theme https://raw.githubusercontent.co
 # restart terminal and apply changes
 source ~/.zshrc
 
+# Tmux plugin manager - https://github.com/tmux-plugins/tpm
+# tmux resurrect to save and load sessions - https://github.com/tmux-plugins/tmux-resurrect?tab=readme-ov-file
 
 
 # Optional
