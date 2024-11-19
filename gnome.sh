@@ -50,7 +50,6 @@ sudo gdebi discord.deb
 # spotify install
 curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-
 sudo update && sudo nala install spotify-client -y
 
 # install oh my zsh
@@ -71,6 +70,10 @@ wget -O ~/.oh-my-zsh/themes/kali-like.zsh-theme https://raw.githubusercontent.co
 # Set ZSH_THEME="current_theme" to ZSH_THEME="kali-like" 
 # restart terminal and apply changes
 source ~/.zshrc
+
+# nvidia install https://linuxconfig.org/how-to-install-nvidia-driver-on-debian-12-bookworm-linux
+sudo nala install nvidia-driver
+
 
 
 # Optional
