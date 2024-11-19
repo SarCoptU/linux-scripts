@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Debian 12 gnome with standard utilities
+
 # Remove some default home folders
 rm -rf ~/Videos ~/Templates ~/Music ~/Public
 
