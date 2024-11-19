@@ -47,10 +47,6 @@ wget "https://discord.com/api/download?platform=linux&format=deb" -O discord.deb
 sudo gdebi discord.deb
 # install taskbar notification ?source
 
-# fingerprint authentication https://wiki.debian.org/SecurityManagement/fingerprint%20authentication if laptop has a scanner - NOT the case on the current laptop
-# sudo apt install fprintd libpam-fprintd
-# then follow the instruction at Settings/User/Fingerprint Login
-
 # install oh my zsh
 # first install zsh
 sudo apt install -y zsh
@@ -69,3 +65,20 @@ wget -O ~/.oh-my-zsh/themes/kali-like.zsh-theme https://raw.githubusercontent.co
 # Set ZSH_THEME="current_theme" to ZSH_THEME="kali-like" 
 # restart terminal and apply changes
 source ~/.zshrc
+
+# Optional
+
+# fingerprint authentication https://wiki.debian.org/SecurityManagement/fingerprint%20authentication if laptop has a scanner - NOT the case on the current laptop
+# sudo apt install fprintd libpam-fprintd
+# then follow the instruction at Settings/User/Fingerprint Login
+
+# For the following apps I have not found a download API similar to discord
+# so I am just adding the latest links here for reference
+
+# Install Obsidian 
+# wget "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.7.7/obsidian_1.7.7_amd64.deb" -O obsidian.deb 
+# sudo gdebi obsidian.deb
+
+# Install latest virtualbox
+# wget "https://download.virtualbox.org/virtualbox/7.1.4/virtualbox-7.1_7.1.4-165100~Debian~bookworm_amd64.deb# -O virtualbox.deb
+# sudo gdebi virtualbox.deb
