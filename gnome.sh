@@ -71,9 +71,6 @@ wget -O ~/.oh-my-zsh/themes/kali-like.zsh-theme https://raw.githubusercontent.co
 # restart terminal and apply changes
 source ~/.zshrc
 
-# nvidia install https://linuxconfig.org/how-to-install-nvidia-driver-on-debian-12-bookworm-linux
-sudo nala install nvidia-driver
-
 
 
 # Optional
@@ -81,6 +78,9 @@ sudo nala install nvidia-driver
 # fingerprint authentication https://wiki.debian.org/SecurityManagement/fingerprint%20authentication if laptop has a scanner - NOT the case on the current laptop
 # sudo nala install fprintd libpam-fprintd
 # then follow the instruction at Settings/User/Fingerprint Login
+
+# nvidia install https://linuxconfig.org/how-to-install-nvidia-driver-on-debian-12-bookworm-linux
+# sudo nala install nvidia-driver
 
 # For the following apps I have not found a download API similar to discord
 # so I am just adding the latest links here for reference
