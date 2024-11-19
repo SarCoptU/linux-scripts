@@ -10,6 +10,10 @@ sudo apt upgrade
 sudo apt install tmux neovim htop wget curl timeshift gdebi neofetch nala git flatpak haruna net-tools -y
 # add blueman if xfce
 
+# remove gnome games
+sudo apt purge gnome-games -y
+sudo apt autoremove
+
 # Install build essential
 sudo apt install build-essential dkms linux-headers-$(uname -r) -y
 
