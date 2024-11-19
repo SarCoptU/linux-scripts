@@ -8,6 +8,7 @@ sudo apt update
 sudo apt upgrade
 
 sudo apt install tmux neovim htop wget curl timeshift gdebi neofetch nala git flatpak haruna net-tools -y
+# add blueman if xfce
 
 # Install build essential
 sudo apt install build-essential dkms linux-headers-$(uname -r) -y
@@ -21,6 +22,9 @@ sudo apt install libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly g
 
 # Gnome manager for tweaking the desktop environment
 sudo apt install gnome-shell-extension-manager -y
+
+# Add flatpak backup repo
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # Neovim configuration: add line numbers and check syntax
 mkdir ~/.config/nvim
@@ -40,12 +44,12 @@ wget "https://discord.com/api/download?platform=linux&format=deb" -O discord.deb
 sudo gdebi discord.deb
 # install taskbar notification ?source
 
-# fingerprint authentication https://wiki.debian.org/SecurityManagement/fingerprint%20authentication
-sudo apt install fprintd libpam-fprintd
+# fingerprint authentication https://wiki.debian.org/SecurityManagement/fingerprint%20authentication if laptop has a scanner - NOT the case on the current laptop
+# sudo apt install fprintd libpam-fprintd
 # then follow the instruction at Settings/User/Fingerprint Login
 
 # install oh my zsh
-# fist install zsh
+# first install zsh
 sudo apt install -y zsh
 # change default shell to zsh then restart
 chsh -s $(which zsh)
