@@ -1,7 +1,7 @@
 # debian_scripts
 Scripts for Debian Linux
 
-# Optional
+Optional
 
 Tmux plugin manager - https://github.com/tmux-plugins/tpm
 tmux resurrect to save and load sessions - https://github.com/tmux-plugins/tmux-resurrect?tab=readme-ov-file
@@ -20,8 +20,10 @@ so I am just adding the latest links here for reference
 
 Install Obsidian 
 wget "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.7.7/obsidian_1.7.7_amd64.deb" -O obsidian.deb 
+
 sudo gdebi obsidian.deb
 
 Install latest virtualbox
-wget "https://download.virtualbox.org/virtualbox/7.1.4/virtualbox-7.1_7.1.4-165100~Debian~bookworm_amd64.deb# -O virtualbox.deb
+wget "https://download.virtualbox.org/virtualbox/7.1.4/virtualbox-7.1_7.1.4-165100~Debian~bookworm_amd64.deb# -O 
+virtualbox.deb
 sudo gdebi virtualbox.deb
