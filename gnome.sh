@@ -13,18 +13,18 @@ sudo apt install tmux neovim htop wget curl timeshift gdebi neofetch nala git fl
 # add blueman if xfce
 
 # remove gnome games
-sudo apt purge gnome-games -y
-sudo apt autoremove
+sudo nala purge gnome-games -y
+sudo nala autoremove
 
 # Install build essential
-sudo apt install build-essential dkms linux-headers-$(uname -r) -y
+sudo nala install build-essential dkms linux-headers-$(uname -r) -y
 
 # Add microsoft fonts
 sudo apt-add-repository contrib non-free -y
-sudo apt install software-properties-common ttf-mscorefonts-installer -y
+sudo nala install software-properties-common ttf-mscorefonts-installer -y
 
 # Install restricted extras - non open source codecs 
-sudo apt install libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi -y
+sudo nala install libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi -y
 
 # Add flatpak backup repo
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -35,7 +35,7 @@ echo "set number" >> ~/.config/nvim/init.vim
 echo "syntax on" >> ~/.config/nvim/init.vim
 
 # Install and configure firewall
-sudo apt install ufw -y
+sudo nala install ufw -y
 sudo ufw enable
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
@@ -47,15 +47,21 @@ wget "https://discord.com/api/download?platform=linux&format=deb" -O discord.deb
 sudo gdebi discord.deb
 # install taskbar notification ?source
 
+# spotify install
+curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+
+sudo update && sudo nala install spotify-client
+
 # install oh my zsh
 # first install zsh
-sudo apt install -y zsh
+sudo nala install -y zsh
 # change default shell to zsh then restart
 chsh -s $(which zsh)
 # download and install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # for themes that require powerline fonts
-sudo apt install -y fonts-powerline
+sudo nala install -y fonts-powerline
 # restart terminal and apply changes
 source ~/.zshrc
 
@@ -66,10 +72,11 @@ wget -O ~/.oh-my-zsh/themes/kali-like.zsh-theme https://raw.githubusercontent.co
 # restart terminal and apply changes
 source ~/.zshrc
 
+
 # Optional
 
 # fingerprint authentication https://wiki.debian.org/SecurityManagement/fingerprint%20authentication if laptop has a scanner - NOT the case on the current laptop
-# sudo apt install fprintd libpam-fprintd
+# sudo nala install fprintd libpam-fprintd
 # then follow the instruction at Settings/User/Fingerprint Login
 
 # For the following apps I have not found a download API similar to discord
