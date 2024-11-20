@@ -52,6 +52,9 @@ curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | sudo 
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo update && sudo nala install spotify-client -y
 
+# swap left control with caps lock on US layout
+setxkbmap -layout us -option ctrl:swapcaps
+
 # install oh my zsh
 # first install zsh
 sudo nala install -y zsh
