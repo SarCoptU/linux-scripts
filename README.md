@@ -1,5 +1,5 @@
 # linux_scripts
-Scripts for Debian Linux
+Scripts for Linux distros
 
 Optional
 
