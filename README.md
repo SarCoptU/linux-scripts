@@ -1,4 +1,4 @@
-# debian_scripts
+# linux_scripts
 Scripts for Debian Linux
 
 Optional
