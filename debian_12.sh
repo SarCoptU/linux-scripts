@@ -73,3 +73,9 @@ wget -O ~/.oh-my-zsh/themes/kali-like.zsh-theme https://raw.githubusercontent.co
 # Set ZSH_THEME="current_theme" to ZSH_THEME="kali-like" 
 # restart terminal and apply changes
 source ~/.zshrc
+
+# Install steam https://wiki.debian.org/Steam
+sudo dpkg --add-architecture i386
+sudo nala update -y
+sudo nala install steam-installer
+sudo nala install mesa-vulkan-drivers libglx-mesa0:i386 mesa-vulkan-drivers:i386 libgl1-mesa-dri:i386
