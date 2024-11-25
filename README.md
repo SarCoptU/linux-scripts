@@ -27,3 +27,6 @@ Install latest virtualbox
 wget "https://download.virtualbox.org/virtualbox/7.1.4/virtualbox-7.1_7.1.4-165100~Debian~bookworm_amd64.deb# -O 
 virtualbox.deb
 sudo gdebi virtualbox.deb
+
+Install steam
+https://wiki.debian.org/Steam
