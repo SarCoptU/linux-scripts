@@ -1,7 +1,7 @@
 # linux_scripts
 Scripts for Linux distros
 
-Optional
+Debian 12 extras:
 
 Tmux plugin manager - https://github.com/tmux-plugins/tpm
 tmux resurrect to save and load sessions - https://github.com/tmux-plugins/tmux-resurrect?tab=readme-ov-file
