@@ -10,7 +10,7 @@ tmux resurrect to save and load sessions - https://github.com/tmux-plugins/tmux-
 - fingerprint authentication - https://wiki.debian.org/SecurityManagement/fingerprint%20authentication 
 if laptop has a scanner - NOT the case on the current laptop
 
-- 'sudo nala install fprintd libpam-fprintd'
+- sudo nala install fprintd libpam-fprintd
 then follow the instruction at Settings/User/Fingerprint Login
 
 - nvidia install https://linuxconfig.org/how-to-install-nvidia-driver-on-debian-12-bookworm-linux
