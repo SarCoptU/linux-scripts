@@ -10,7 +10,7 @@ tmux resurrect to save and load sessions - https://github.com/tmux-plugins/tmux-
 - fingerprint authentication - https://wiki.debian.org/SecurityManagement/fingerprint%20authentication 
 if laptop has a scanner - NOT the case on the current laptop
 
-sudo nala install fprintd libpam-fprintd
+- sudo nala install fprintd libpam-fprintd
 then follow the instruction at Settings/User/Fingerprint Login
 
 - nvidia install https://linuxconfig.org/how-to-install-nvidia-driver-on-debian-12-bookworm-linux
@@ -28,5 +28,5 @@ wget "https://download.virtualbox.org/virtualbox/7.1.4/virtualbox-7.1_7.1.4-1651
 virtualbox.deb
 sudo gdebi virtualbox.deb
 
-Install steam
+- Install steam
 https://wiki.debian.org/Steam
