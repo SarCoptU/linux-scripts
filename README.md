@@ -30,3 +30,6 @@ sudo gdebi virtualbox.deb
 
 - Install steam
 https://wiki.debian.org/Steam
+
+- install gnome app indicator
+https://extensions.gnome.org/extension/615/appindicator-support/
