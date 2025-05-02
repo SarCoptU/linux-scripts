@@ -47,10 +47,6 @@ wget "https://discord.com/api/download?platform=linux&format=deb" -O discord.deb
 sudo gdebi discord.deb
 # install taskbar notification ?source
 
-# spotify install
-curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
-echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-sudo update && sudo nala install spotify-client -y
 
 # swap left control with caps lock on US layout
 setxkbmap -layout us -option ctrl:swapcaps
