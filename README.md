@@ -8,7 +8,7 @@ Scripts for Linux distros
   - https://github.com/tmux-plugins/tmux-resurrect?tab=readme-ov-file
 
 - for KDE
-  - sudo apt install plasma-discover-backend-flatpak
+  - `sudo apt install plasma-discover-backend-flatpak`
     
 - If gnome
   - install gdebi in the initial apt install
