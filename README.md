@@ -29,6 +29,7 @@ virtualbox.deb
 sudo gdebi virtualbox.deb
 
 - for KDE
+
 sudo apt install plasma-discover-backend-flatpak # for kde
 
 - Install steam
