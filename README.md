@@ -7,6 +7,18 @@ Scripts for Linux distros
   - https://github.com/tmux-plugins/tpm - tmux resurrect to save and load sessions
   - https://github.com/tmux-plugins/tmux-resurrect?tab=readme-ov-file
 
+- for KDE
+  - sudo apt install plasma-discover-backend-flatpak
+    
+- If gnome
+  - install gdebi in the initial apt install
+ 
+- if xfce
+  - install blueman for bluetooth
+
+- Sometimes this work for swapping ctrl and caps lock on US layout
+    - setxkbmap -layout us -option ctrl:swapcaps
+
 
 - fingerprint authentication
    - https://wiki.debian.org/SecurityManagement/fingerprint%20authentication - if laptop has a scanner - NOT the case on the current laptop
@@ -20,8 +32,6 @@ Scripts for Linux distros
   - wget "https://download.virtualbox.org/virtualbox/7.1.4/virtualbox-7.1_7.1.4-165100~Debian~bookworm_amd64.deb# -O virtualbox.deb
   - sudo gdebi virtualbox.deb
 
-- for KDE
-  - sudo apt install plasma-discover-backend-flatpak # for kde
 
 - Install steam
   - https://wiki.debian.org/Steam
