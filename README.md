@@ -3,11 +3,9 @@ Scripts for Linux distros
 
 **Debian 12 extras:**
 
-- Tmux plugin manager
-
-https://github.com/tmux-plugins/tpm
-
-tmux resurrect to save and load sessions - https://github.com/tmux-plugins/tmux-resurrect?tab=readme-ov-file
+-- Tmux plugin manager
+- https://github.com/tmux-plugins/tpm
+- tmux resurrect to save and load sessions - https://github.com/tmux-plugins/tmux-resurrect?tab=readme-ov-file
 
 
 - fingerprint authentication - https://wiki.debian.org/SecurityManagement/fingerprint%20authentication 
