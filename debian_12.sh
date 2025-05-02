@@ -10,7 +10,6 @@ sudo apt update
 sudo apt upgrade
 
 sudo apt install tmux neovim htop wget curl timeshift neofetch nala git flatpak haruna net-tools -y
-# add blueman if xfce
 
 # Install build essential
 sudo nala install build-essential dkms linux-headers-$(uname -r) -y
@@ -41,9 +40,6 @@ sudo ufw allow ssh
 # discord, spotify install
 flatpak install discord
 flatpak install spotify
-
-# swap left control with caps lock on US layout
-setxkbmap -layout us -option ctrl:swapcaps
 
 # install oh my zsh
 # first install zsh
