@@ -24,7 +24,6 @@ sudo nala install libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly 
 
 # Add flatpak backup repo
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-sudo apt install plasma-discover-backend-flatpak # for kde
 
 # Neovim configuration: add line numbers and check syntax
 mkdir ~/.config/nvim
