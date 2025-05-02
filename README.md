@@ -28,6 +28,9 @@ wget "https://download.virtualbox.org/virtualbox/7.1.4/virtualbox-7.1_7.1.4-1651
 virtualbox.deb
 sudo gdebi virtualbox.deb
 
+- for KDE
+sudo apt install plasma-discover-backend-flatpak # for kde
+
 - Install steam
 https://wiki.debian.org/Steam
 
