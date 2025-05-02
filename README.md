@@ -28,10 +28,6 @@ Scripts for Linux distros
 - nvidia install https://linuxconfig.org/how-to-install-nvidia-driver-on-debian-12-bookworm-linux
    - sudo nala install nvidia-driver
 
-- Install latest virtualbox
-  - wget "https://download.virtualbox.org/virtualbox/7.1.4/virtualbox-7.1_7.1.4-165100~Debian~bookworm_amd64.deb# -O virtualbox.deb
-  - sudo gdebi virtualbox.deb
-
 
 - Install steam
   - https://wiki.debian.org/Steam
