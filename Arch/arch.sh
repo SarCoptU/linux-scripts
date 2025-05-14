@@ -7,7 +7,7 @@ sudo pacman -Syu
 sudo pacman -S git curl wget kitty zsh haruna waybar hyprland tmux nvim
 
 # Install fonts
-sudo pacman -S fonts-powerline
+sudo pacman -S fonts-powerline ttf-font-awesome
 
 # Change default shell to zsh then restart/logout
 chsh -s $(which zsh)
