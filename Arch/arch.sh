@@ -4,7 +4,7 @@
 sudo pacman -Syu
 
 # Install software
-sudo pacman -S git curl wget kitty zsh haruna waybar hyprland tmux nvim
+sudo pacman -S git curl wget alacritty zsh haruna waybar hyprland tmux nvim
 
 # Install fonts
 sudo pacman -S fonts-powerline ttf-font-awesome
