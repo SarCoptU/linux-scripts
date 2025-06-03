@@ -4,7 +4,11 @@
 sudo zypper ref && sudo zypper dup -y
 
 # Install software
-sudo zypper install git curl wget alacritty zsh haruna waybar hyprland tmux nvim wofi
+sudo zypper install git curl wget alacritty zsh haruna waybar hyprland tmux nvim wofi -y
+
+# Install opi and codecs
+sudo zypper install opi -y
+opi codecs
 
 # PDF simple splitter
 # https://scarpetta.eu/pdfmixtool/#installation
