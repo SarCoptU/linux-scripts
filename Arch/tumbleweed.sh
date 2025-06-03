@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Update the system
-sudo pacman -Syu
+sudo zypper ref && sudo zypper dup -y
 
 # Install software
 sudo pacman -S git curl wget alacritty zsh haruna waybar hyprland tmux nvim
 
 # Install fonts
-sudo pacman -S fonts-powerline ttf-font-awesome
+sudo zypper install fonts-powerline ttf-font-awesome
 
 # Change default shell to zsh then restart/logout
 chsh -s $(which zsh)
