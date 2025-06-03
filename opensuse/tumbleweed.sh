@@ -4,10 +4,10 @@
 sudo zypper ref && sudo zypper dup -y
 
 # Install software
-sudo pacman -S git curl wget alacritty zsh haruna waybar hyprland tmux nvim
+sudo zypper install git curl wget alacritty zsh haruna waybar hyprland tmux nvim wofi
 
-# Install fonts
-sudo zypper install fonts-powerline ttf-font-awesome
+# PDF simple splitter
+# https://scarpetta.eu/pdfmixtool/#installation
 
 # Change default shell to zsh then restart/logout
 chsh -s $(which zsh)
