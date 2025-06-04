@@ -20,5 +20,5 @@ sudo pacman -S xf86-video-amdgpu vulkan-radeon mesa
 sudo pacman -S nvidia nvidia-utils nvidia-prime
 
 # enable LightDM 
-sudo systemctl enable LightDM.service
+sudo systemctl enable lightdm.service
 
