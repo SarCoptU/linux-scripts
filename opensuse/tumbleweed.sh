@@ -7,7 +7,7 @@ sudo rm -rf ~/Public ~/Templates ~/Videos ~/Music
 sudo zypper ref && sudo zypper dup 
 
 # Install software
-sudo zypper install git curl wget alacritty zsh haruna waybar hyprland hyprland-qtutils tmux nvim wofi 
+sudo zypper install git gh curl wget alacritty zsh haruna waybar hyprland hyprland-qtutils tmux nvim wofi 
 
 # Install opi and codecs
 sudo zypper install opi -y
