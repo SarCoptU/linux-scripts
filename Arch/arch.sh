@@ -9,7 +9,7 @@ sudo rm -rf ~/Desktop ~/Templates ~/Videos
 sudo -Syu xfce xfce-goodies 
 
 # install essential programs
-sudo -S curl wget git gh zsh tmux nvim haruna stow hyprland hyprland-utils alacritty waybar wofi
+sudo pacman -S curl wget git gh zsh tmux nvim haruna stow hyprland hyprland-utils alacritty waybar wofi
 
 # DM which works with xfce
 sudo pacman -S lightdm lightdm-gtk-greeter
