@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # install xfce
-sudo pacman -Syu xfce xfce-goodies 
+sudo pacman -Syu xfce4 xfce4-goodies 
 
 # install essential programs
-sudo pacman -S curl wget git gh zsh tmux nvim haruna stow hyprland hyprland-utils alacritty waybar wofi
+sudo pacman -S curl wget git zsh tmux nvim haruna stow hyprland alacritty waybar wofi
 
 # DM which works with xfce
 sudo pacman -S lightdm lightdm-gtk-greeter
