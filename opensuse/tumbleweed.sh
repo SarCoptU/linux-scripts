@@ -10,7 +10,7 @@ sudo zypper ref && sudo zypper dup
 sudo zypper install git gh curl wget alacritty zsh haruna waybar hyprland hyprland-qtutils tmux nvim wofi 
 
 # Install opi and codecs
-sudo zypper install opi -y
+sudo zypper install opi
 opi codecs
 
 # PDF simple splitter
