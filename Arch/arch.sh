@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# xfce install
-
 # remove unessential home directories
 sudo rm -rf ~/Desktop ~/Templates ~/Videos 
 
