@@ -4,7 +4,7 @@
 sudo rm -rf ~/Desktop ~/Templates ~/Videos 
 
 # install xfce
-sudo -Syu xfce xfce-goodies 
+sudo pacman -Syu xfce xfce-goodies 
 
 # install essential programs
 sudo pacman -S curl wget git gh zsh tmux nvim haruna stow hyprland hyprland-utils alacritty waybar wofi
