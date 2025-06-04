@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# remove unessential home directories
-sudo rm -rf ~/Desktop ~/Templates ~/Videos 
-
 # install xfce
 sudo pacman -Syu xfce xfce-goodies 
 
@@ -22,3 +19,5 @@ sudo pacman -S nvidia nvidia-utils nvidia-prime
 # enable LightDM 
 sudo systemctl enable lightdm.service
 
+# remove unessential home directories
+sudo rm -rf ~/Desktop ~/Templates ~/Videos 
