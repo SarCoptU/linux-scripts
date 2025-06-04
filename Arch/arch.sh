@@ -16,6 +16,9 @@ sudo pacman -S xf86-video-amdgpu vulkan-radeon mesa
 
 sudo pacman -S nvidia nvidia-utils nvidia-prime
 
+# font for hyprland
+sudo pacman -S ttf-font-awesome
+
 # enable LightDM 
 sudo systemctl enable lightdm.service
 
