@@ -22,5 +22,3 @@ sudo pacman -S nvidia nvidia-utils nvidia-prime
 # enable LightDM 
 sudo systemctl enable LightDM.service
 
-sudo reboot
-
