@@ -4,7 +4,7 @@
 sudo pacman -Syu xfce4 xfce4-goodies 
 
 # install essential programs
-sudo pacman -S firefox discord curl wget git github-cli zsh tmux nvim haruna tree stow
+sudo pacman -S firefox discord curl wget git github-cli zsh tmux nvim haruna tree stow bluez bluez-utils bluez-deprecated-tools 
 
 # Thunar functionality - gnome virtual file system + flatpak
 sudo pacman -S gvfs flatpak
