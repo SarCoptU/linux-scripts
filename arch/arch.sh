@@ -23,6 +23,8 @@ sudo pacman -S hyprland alacritty waybar wofi ttf-font-awesome powerline powerli
 # enable LightDM 
 sudo systemctl enable lightdm.service
 
+# spotify/obsidian flatpak
+flatpak install obsidian spotify
 
 # Change default shell to zsh then restart/logout
 chsh -s $(which zsh)
