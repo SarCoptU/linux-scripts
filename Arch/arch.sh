@@ -6,6 +6,9 @@ sudo pacman -Syu xfce4 xfce4-goodies
 # install essential programs
 sudo pacman -S firefox curl wget git github-cli zsh tmux nvim haruna tree stow hyprland alacritty waybar wofi
 
+# Thunar functionality - gnome virtual file system
+sudo pacman -S gvfs 
+
 # DM which works with xfce
 sudo pacman -S lightdm lightdm-gtk-greeter
 
