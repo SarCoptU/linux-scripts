@@ -1,63 +1,139 @@
-# Extras
+Linux Configuration Extras
 
-## Debian 12
+This guide provides a collection of optional but useful configurations and software installations for various Linux distributions.
+1. Zsh & Oh My Zsh Setup
 
-- Tmux plugin manager
-  - https://github.com/tmux-plugins/tpm - tmux resurrect to save and load sessions
-  - https://github.com/tmux-plugins/tmux-resurrect?tab=readme-ov-file
+This setup enhances your terminal experience with the Zsh shell and the Oh My Zsh framework. It is compatible with most Linux distributions.
+1.1. Prerequisites: Installing Zsh & Utilities
 
-- for KDE
-  - `sudo apt install plasma-discover-backend-flatpak`
-    
-- If gnome
-  - install `gdebi` in the initial apt install
- 
-- if xfce
-  - install `blueman` for bluetooth
+First, you need to install zsh and some common utilities (curl, wget) if they aren't already on your system. Open your terminal and use the command corresponding to your distribution:
 
-- Sometimes this work for swapping ctrl and caps lock on US layout
-    - `setxkbmap -layout us -option ctrl:swapcaps`
+    For Debian / Ubuntu / Linux Mint:
+    Bash
 
+sudo apt update && sudo apt install zsh curl wget -y
 
-- fingerprint authentication
-   - https://wiki.debian.org/SecurityManagement/fingerprint%20authentication - if laptop has a scanner 
-   -  `sudo nala install fprintd libpam-fprintd`
-   -  then follow the instruction at Settings/User/Fingerprint Login
+For Arch Linux / Manjaro:
+Bash
 
-- nvidia install https://linuxconfig.org/how-to-install-nvidia-driver-on-debian-12-bookworm-linux
-   - `sudo nala install nvidia-driver`
+sudo pacman -Syu --noconfirm --needed zsh curl wget
 
-- Install steam
-  - https://wiki.debian.org/Steam
+For Fedora / CentOS / RHEL:
+Bash
 
-- install gnome app indicator
-  - https://extensions.gnome.org/extension/615/appindicator-support/
+sudo dnf install zsh curl wget -y
 
+For openSUSE:
+Bash
 
-## zhs/oh my zsh install
+    sudo zypper install zsh curl wget
 
-- Change default shell to zsh then restart/logout
-`chsh -s $(which zsh)`
+1.2. Core Installation
 
-- Download and install oh my zsh
-`sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+    Change Your Default Shell to Zsh
+    After running this command, you must log out and log back in for the change to take full effect.
+    Bash
 
-- Restart terminal and apply changes
-`source ~/.zshrc`
+chsh -s $(which zsh)
 
-- install kali-like theme
-`wget -O ~/.oh-my-zsh/themes/kali-like.zsh-theme https://raw.githubusercontent.com/clamy54/kali-like-zsh-theme/master/kali-like.zsh-theme`
+Install Oh My Zsh
+This command uses curl to download and run the official installation script.
+Bash
 
-#### open zsh settings to change theme
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-`nvim ~/.zshrc`
+1.3. Custom Theming (Example: Kali-Like)
 
-Set ZSH_THEME="current_theme" to ZSH_THEME="kali-like" 
+    Download the Theme File
+    This command uses wget to download the theme and place it in the Oh My Zsh themes directory.
+    Bash
 
-Restart terminal to apply changes
-`source ~/.zshrc`
+wget -O ~/.oh-my-zsh/custom/themes/kali-like.zsh-theme https://raw.githubusercontent.com/clamy54/kali-like-zsh-theme/master/kali-like.zsh-theme
 
-## Programs
-- PDF simple splitter
+Set the Theme in .zshrc
+Open your Zsh configuration file with a text editor (e.g., nvim, nano, vim).
+Bash
 
-https://scarpetta.eu/pdfmixtool/#installation
+nvim ~/.zshrc
+
+Find the line ZSH_THEME="..." and change it to:
+
+ZSH_THEME="kali-like"
+
+Apply Changes
+Reload your shell configuration for the new theme to appear.
+Bash
+
+    source ~/.zshrc
+
+2. Debian 12 Specifics
+
+These are tweaks and installations specific to Debian 12 "Bookworm".
+Hardware & Drivers
+
+    NVIDIA Drivers
+    First, ensure the contrib and non-free repositories are enabled.
+    Bash
+
+sudo nala install nvidia-driver
+
+For a more detailed guide, see the Debian Wiki on NVIDIA.
+
+Fingerprint Authentication
+For laptops with a fingerprint scanner.
+
+    Install the necessary packages:
+    Bash
+
+        sudo nala install fprintd libpam-fprintd
+
+        Follow the setup instructions in Settings > Users > Fingerprint Login. See the Debian Wiki on Fingerprint Auth for more.
+
+Desktop Environment Extras
+
+    For KDE Plasma:
+    Install the Flatpak backend for the Discover software center.
+    Bash
+
+sudo apt install plasma-discover-backend-flatpak
+
+For GNOME:
+
+    Install gdebi for easier local .deb package installation.
+    Bash
+
+    sudo apt install gdebi
+
+    Install the AppIndicator extension for tray icons from third-party apps. GNOME Extensions: AppIndicator Support
+
+For XFCE:
+Install blueman for a full-featured Bluetooth manager.
+Bash
+
+    sudo apt install blueman
+
+Keyboard Layout
+
+    Swap Caps Lock and Left Control This command temporarily remaps the keys for the current session. For a permanent change, you'll need to configure it in your desktop environment's settings or an Xorg configuration file.
+    Bash
+
+    setxkbmap -layout us -option ctrl:swapcaps
+
+Tmux (Terminal Multiplexer)
+
+    TPM (Tmux Plugin Manager)
+    TPM simplifies managing Tmux plugins.
+        TPM GitHub Repository
+
+    Recommended Plugin: Tmux Resurrect
+    Saves and restores Tmux sessions across reboots.
+        Tmux Resurrect GitHub Repository
+
+3. Useful Cross-Platform Applications
+
+    Steam (for Gaming)
+    The Debian Wiki for Steam provides the most reliable and up-to-date installation instructions.
+
+    PDF Mix Tool (for PDF Editing)
+    A simple and effective application for merging, splitting, and editing PDF files.
+        Official Website & Installation Guide
