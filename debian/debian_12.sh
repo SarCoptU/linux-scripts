@@ -24,11 +24,6 @@ sudo nala install libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly 
 # Add flatpak backup repo
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-# Neovim configuration: add line numbers and check syntax
-mkdir ~/.config/nvim
-echo "set number" >> ~/.config/nvim/init.vim
-echo "syntax on" >> ~/.config/nvim/init.vim
-
 # Install and configure firewall
 sudo nala install ufw -y
 sudo ufw enable
@@ -41,24 +36,8 @@ sudo ufw allow ssh
 flatpak install discord
 flatpak install spotify
 
-# install oh my zsh
-# first install zsh
-sudo nala install -y zsh
-# change default shell to zsh then restart
-chsh -s $(which zsh)
-# download and install oh my zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # for themes that require powerline fonts
 sudo nala install -y fonts-powerline
-# restart terminal and apply changes
-source ~/.zshrc
-
-# install kali-like theme and 
-wget -O ~/.oh-my-zsh/themes/kali-like.zsh-theme https://raw.githubusercontent.com/clamy54/kali-like-zsh-theme/master/kali-like.zsh-theme
-# nvim ~/.zshrc
-# Set ZSH_THEME="current_theme" to ZSH_THEME="kali-like" 
-# restart terminal and apply changes
-source ~/.zshrc
 
 # Install steam https://wiki.debian.org/Steam
 sudo dpkg --add-architecture i386
