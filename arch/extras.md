@@ -1,4 +1,6 @@
-# zhs/oh my zsh install
+# Extras
+
+## zhs/oh my zsh install
 
 - Change default shell to zsh then restart/logout
 `chsh -s $(which zsh)`
@@ -12,7 +14,7 @@
 - install kali-like theme
 `wget -O ~/.oh-my-zsh/themes/kali-like.zsh-theme https://raw.githubusercontent.com/clamy54/kali-like-zsh-theme/master/kali-like.zsh-theme`
 
-### open zsh settings to change theme
+#### open zsh settings to change theme
 
 `nvim ~/.zshrc`
 
