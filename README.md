@@ -1,2 +1,5 @@
-# Scripts for Linux config
-Configuration for Debian 12 and ArchLinux
+# Scripts for Linux 
+
+Scripts for linux configurations for a Linux semi hopper
+
+NOTE: Numbers added to file names to order them
