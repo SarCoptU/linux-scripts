@@ -17,8 +17,8 @@ sudo pacman -S lightdm lightdm-gtk-greeter
 sudo pacman -S xf86-video-amdgpu vulkan-radeon mesa
 sudo pacman -S nvidia nvidia-utils nvidia-prime
 
-# font for hyprland
-sudo pacman -S hyprland alacritty waybar wofi ttf-font-awesome powerline powerline-fonts bluez bluez-utils bluez-deprecated-tools 
+# hyprland tweaks
+sudo pacman -S hyprland alacritty waybar wofi ttf-font-awesome powerline powerline-fonts bluez bluez-utils bluez-deprecated-tools brightnessctl 
 
 
 # enable LightDM 
