@@ -1,6 +1,6 @@
 # Extras
 
-## Debian 12 extras
+## Debian 12
 
 - Tmux plugin manager
   - https://github.com/tmux-plugins/tpm - tmux resurrect to save and load sessions
@@ -56,3 +56,8 @@ Set ZSH_THEME="current_theme" to ZSH_THEME="kali-like"
 
 Restart terminal to apply changes
 `source ~/.zshrc`
+
+## Programs
+- PDF simple splitter
+
+https://scarpetta.eu/pdfmixtool/#installation
