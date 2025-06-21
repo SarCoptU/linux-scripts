@@ -24,7 +24,7 @@ sudo systemctl enable lightdm.service
 # Consolidating package installation into a single command is more efficient.
 # Using the --needed flag prevents re-installing packages that are already up-to-date.
 echo ":: Installing essential applications..."
-sudo pacman -S --noconfirm --needed firefox discord curl wget git github-cli zsh tmux nvim haruna tree stow gvfs flatpak yt-dlp
+sudo pacman -S --noconfirm --needed firefox discord curl wget git github-cli zsh tmux nvim haruna tree stow pdfmixtool gvfs flatpak yt-dlp
 
 # --- Graphics Drivers for Hybrid GPUs (NVIDIA/AMD) ---
 # This section installs drivers for a hybrid setup.
