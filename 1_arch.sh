@@ -38,7 +38,7 @@ sudo pacman -S --noconfirm --needed nvidia nvidia-utils nvidia-prime
 # --- Hyprland Window Manager & Utilities ---
 # Installs the Hyprland compositor and common tools used with it.
 echo ":: Installing Hyprland and related tools..."
-sudo pacman -S --noconfirm --needed hyprland alacritty waybar wofi ttf-font-awesome powerline powerline-fonts brightnessctl
+sudo pacman -S --noconfirm --needed hyprland hyprshot alacritty waybar wofi ttf-font-awesome powerline powerline-fonts brightnessctl
 
 # --- Bluetooth Support ---
 # Installs Bluez for Bluetooth functionality.
