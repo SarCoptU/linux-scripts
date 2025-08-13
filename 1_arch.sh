@@ -31,9 +31,9 @@ sudo pacman -S --noconfirm --needed firefox discord curl wget git github-cli zsh
 # Ensure you have identified your hardware correctly before running this.
 echo ":: Installing graphics drivers for AMD/NVIDIA hybrid setup..."
 # AMD components
-sudo pacman -S --noconfirm --needed xf86-video-amdgpu vulkan-radeon mesa libva-mesa-driver mesa-vdpau
+sudo pacman -S --needed xf86-video-amdgpu vulkan-radeon mesa libva-mesa-driver mesa-vdpau
 # NVIDIA components
-sudo pacman -S --noconfirm --needed nvidia nvidia-utils nvidia-prime
+sudo pacman -S --needed nvidia nvidia-utils nvidia-prime
 
 # --- Hyprland Window Manager & Utilities ---
 # Installs the Hyprland compositor and common tools used with it.
