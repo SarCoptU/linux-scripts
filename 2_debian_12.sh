@@ -13,6 +13,8 @@ echo ":: Starting Debian 12 configuration..."
 echo ":: Removing default user directories (Music, Public, Templates, Videos)..."
 rm -rf "$HOME/Music" "$HOME/Public" "$HOME/Templates" "$HOME/Videos"
 
+sudo apt install nala -y
+
 # --- System Update and Upgrade ---
 # First, update package lists and upgrade existing packages using nala.
 echo ":: Updating package lists and upgrading system..."
