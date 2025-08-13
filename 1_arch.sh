@@ -27,13 +27,35 @@ echo ":: Installing essential applications..."
 sudo pacman -S --noconfirm --needed firefox discord curl wget git github-cli zsh tmux nvim haruna tree stow pdfmixtool gvfs flatpak yt-dlp
 
 # --- Graphics Drivers for Hybrid GPUs (NVIDIA/AMD) ---
-# This section installs drivers for a hybrid setup.
-# Ensure you have identified your hardware correctly before running this.
-echo ":: Installing graphics drivers for AMD/NVIDIA hybrid setup..."
-# AMD components
-sudo pacman -S --needed xf86-video-amdgpu vulkan-radeon mesa libva-mesa-driver mesa-vdpau
-# NVIDIA components
-sudo pacman -S --needed nvidia nvidia-utils nvidia-prime
+echo ":: Detecting GPU setup..."
+
+# Detect GPUs
+HAS_AMD=$(lspci | grep -i 'VGA' | grep -i 'AMD')
+HAS_NVIDIA=$(lspci | grep -i 'VGA\|3D' | grep -i 'NVIDIA')
+
+# Install drivers based on detected GPUs
+if [[ -n "$HAS_AMD" && -n "$HAS_NVIDIA" ]]; then
+    echo ":: AMD + NVIDIA hybrid detected — installing hybrid drivers..."
+
+    # AMD drivers
+    sudo pacman -S --needed xf86-video-amdgpu vulkan-radeon mesa libva-mesa-driver mesa-vdpau
+
+    # NVIDIA drivers
+    sudo pacman -S --needed nvidia nvidia-utils nvidia-prime
+
+elif [[ -n "$HAS_AMD" ]]; then
+    echo ":: AMD GPU detected — installing AMD drivers..."
+
+    sudo pacman -S --needed xf86-video-amdgpu vulkan-radeon mesa libva-mesa-driver mesa-vdpau
+
+elif [[ -n "$HAS_NVIDIA" ]]; then
+    echo ":: NVIDIA GPU detected — installing NVIDIA drivers..."
+
+    sudo pacman -S --needed nvidia nvidia-utils
+
+else
+    echo ":: No supported AMD or NVIDIA GPUs detected — skipping graphics driver installation."
+fi
 
 # --- Hyprland Window Manager & Utilities ---
 # Installs the Hyprland compositor and common tools used with it.
