@@ -4,7 +4,7 @@
 
 This guide provides a collection of optional but useful configurations and software installations for various Linux distributions.
 
-## 1. Zsh & Oh My Zsh Setup
+## 1. Zsh & Oh My Zsh Setup - already in the script
 
 This setup enhances your terminal experience with the Zsh shell and the Oh My Zsh framework. It is compatible with most Linux distributions.
 
