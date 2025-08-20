@@ -1,5 +1,5 @@
 # Scripts for Linux 
 
-Scripts for linux configurations for a Linux semi hopper
+post install scripts for arch, debian and tumbleweed
 
-NOTE: Numbers added to file names to order them
+some useful scripts
