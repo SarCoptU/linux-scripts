@@ -1,6 +1,6 @@
-# Debian + Zsh 
+# Linux Configuration Extras
 
-### Linux Configuration Extras
+### Debian + Zsh
 
 This guide provides a collection of optional but useful configurations and software installations for various Linux distributions.
 
