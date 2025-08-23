@@ -98,4 +98,6 @@ These are tweaks and installations specific to Debian 13 "Trixie".
     ```bash
     mkdir -p ~/.config/sway ~/.config/waybar ~/.config/wofi
     ```
-
+    * power menu for a working waybar power menu - just copy it into 
+    `~/.local/bin/`
+    

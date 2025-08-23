@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+choice=$(printf "Sleep\nLogout\nReboot\nShutdown" | wofi --dmenu --prompt "Power" --location=center)
+
+case "$choice" in
+  Sleep)
+    systemctl suspend
+    ;;
+  Logout)
+    hyprctl dispatch exit
+    ;;
+  Reboot)
+    systemctl reboot
+    ;;
+  Shutdown)
+    systemctl poweroff
+    ;;
+  *) exit 0 ;;
+ esac
